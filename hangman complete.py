@@ -30,12 +30,6 @@ def choose_word(wordlist):
     """
     return random.choice(wordlist)
 
-# end of helper code
-
-# -----------------------------------
-
-# Load the list of words into the variable wordlist
-# so that it can be accessed from anywhere in the program
 wordlist = load_words()
 
 
@@ -244,7 +238,4 @@ while play_again == 'y' :
     secret_word = choose_word(wordlist)
     hangman(secret_word)
     play_again = input('do you want to play again ? (y/n) ')
-    
-    
-    
     
